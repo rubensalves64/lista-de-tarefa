@@ -1,11 +1,11 @@
-const participante = {
-  nome: "Rubens",
-  email: "rubens@gmail.com",
-  dataInscriçao: new Date(2024, 2, 22, 19, 20),
-  dataInscriçao: new Date(2024, 2, 25, 19, 20),
-};
-
-let participante = n;
+let participantes = [
+  {
+    nome: "Rubens",
+    email: "rubens@gmail.com",
+    dataInscriçao: new Date(2024, 2, 22, 19, 20),
+    dataInscriçao: new Date(2024, 2, 25, 19, 20),
+  },
+];
 
 const criarNovoParticipante = (participante) => {
   return `
@@ -24,4 +24,4 @@ const atualizarlista = (participante) => {
   document.querySelector("tbody").innerHTML =
     criarNovoParticipante(participante);
 };
-atualizarlista();
+atualizarlista(participantes);
